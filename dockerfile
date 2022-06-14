@@ -4,10 +4,10 @@ FROM node:16-alpine AS build
 WORKDIR /app
 
 #or download
-RUN wget https://github.com/louislam/uptime-kuma/archive/refs/tags/1.15.1.tar.gz && \
-    tar xvzf 1.15.1.tar.gz && \
-    mv uptime-kuma-1.15.1/* . && \
-    rm -rf uptime-kuma-1.15.1 1.15.1.tar.gz
+RUN wget https://github.com/louislam/uptime-kuma/archive/refs/tags/1.16.1.tar.gz && \
+    tar xvzf 1.16.1.tar.gz && \
+    mv uptime-kuma-1.16.1/* . && \
+    rm -rf uptime-kuma-1.16.1 1.16.1.tar.gz
 
 #--production do not work bc : vite not found
 #RUN npm install --production
